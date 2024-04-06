@@ -34,6 +34,9 @@
             textBox2 = new TextBox();
             button1 = new Button();
             pictureBox1 = new PictureBox();
+            textBox3 = new TextBox();
+            label3 = new Label();
+            textBox4 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -44,6 +47,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(776, 104);
             textBox1.TabIndex = 0;
+            textBox1.Text = "一生中我們會遇到各種各樣的困難許多時候勇敢地直面眼前的困難更有利於幫助我們解決問題";
             // 
             // label1
             // 
@@ -68,12 +72,14 @@
             textBox2.Location = new Point(12, 164);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
+            textBox2.ReadOnly = true;
             textBox2.Size = new Size(775, 115);
             textBox2.TabIndex = 0;
+            textBox2.TabStop = false;
             // 
             // button1
             // 
-            button1.Location = new Point(385, 589);
+            button1.Location = new Point(793, 250);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 3;
@@ -91,13 +97,43 @@
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
             // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(12, 583);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(786, 27);
+            textBox3.TabIndex = 5;
+            textBox3.PreviewKeyDown += textBox3_PreviewKeyDown;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(12, 560);
+            label3.Name = "label3";
+            label3.Size = new Size(43, 20);
+            label3.TabIndex = 2;
+            label3.Text = "Input";
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(12, 616);
+            textBox4.Name = "textBox4";
+            textBox4.ReadOnly = true;
+            textBox4.Size = new Size(786, 27);
+            textBox4.TabIndex = 5;
+            textBox4.TabStop = false;
+            textBox4.PreviewKeyDown += textBox3_PreviewKeyDown;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 616);
+            ClientSize = new Size(912, 651);
+            Controls.Add(textBox4);
+            Controls.Add(textBox3);
             Controls.Add(pictureBox1);
             Controls.Add(button1);
+            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(textBox2);
@@ -117,5 +153,8 @@
         private TextBox textBox2;
         private Button button1;
         private PictureBox pictureBox1;
+        private TextBox textBox3;
+        private Label label3;
+        private TextBox textBox4;
     }
 }
