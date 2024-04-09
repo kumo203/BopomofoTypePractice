@@ -56,6 +56,18 @@ namespace BopomofoTypePractice
             //            return;
             //    }
             //}
+            if (e.KeyCode == Keys.Space)
+            {
+                var ch = textBox2.Text[0].ToString();
+                switch (ch)
+                {
+                    case "ˉ":
+                        {
+                            textBox2.Text = textBox2.Text.Substring(1);
+                            return;
+                        }
+                }
+            }
         }
 
         private string GetZhuyinFromKey(string text)
@@ -64,43 +76,43 @@ namespace BopomofoTypePractice
             switch (text)
             {
                 case "1":
-                case "d1":
+                case "d1": // '1'のキーコードがこれになるので。
                     soundPlayerList[1-1].Play();
                     return "ㄅ";
                 case "2":
-                case "d2":
+                case "d2": // '2'のキーコードがこれになるので。
                     soundPlayerList[5-1].Play();
                     return "ㄉ";
                 case "3":
-                case "d3":
+                case "d3": // '3'のキーコードがこれになるので。
                     return "ˇ";
                 case "4":
-                case "d4":
+                case "d4": // '4'のキーコードがこれになるので。
                     return "ˋ";
                 case "5":
-                case "d5":
+                case "d5": // '5'のキーコードがこれになるので。
                     soundPlayerList[15-1].Play();
                     return "ㄓ";
                 case "6":
-                case "d6":
+                case "d6": // '6'のキーコードがこれになるので。
                     return "ˊ";
                 case "7":
-                case "d7":
-                    return "ˉ"; //"˙"; // イントネーション記号はこれにマッチと思うので
+                case "d7": // '7'のキーコードがこれになるので。
+                    return "˙";
                 case "8":
-                case "d8":
+                case "d8": // '8'のキーコードがこれになるので。
                     soundPlayerList[22-1].Play();
                     return "ㄚ";
                 case "9":
-                case "d9":
+                case "d9": // '9'のキーコードがこれになるので。
                     soundPlayerList[26-1].Play();
                     return "ㄞ";
                 case "0":
-                case "d0":
+                case "d0": // '0'のキーコードがこれになるので。
                     soundPlayerList[30-1].Play();
                     return "ㄢ";
                 case "-":
-                case "oemminus":
+                case "oemminus": // '-'のキーコードがこれになるので。
                     soundPlayerList[34-1].Play();
                     return "ㄦ";
                 case "q":
@@ -161,7 +173,7 @@ namespace BopomofoTypePractice
                     soundPlayerList[28-1].Play();
                     return "ㄠ";
                 case ";":
-                case "oemplus":
+                case "oemplus": // ';'のキーコードがこれになるので。
                     soundPlayerList[32-1].Play();
                     return "ㄤ";
                 case "z":
@@ -186,7 +198,7 @@ namespace BopomofoTypePractice
                     soundPlayerList[37-1].Play();
                     return "ㄩ";
                 case ",":
-                case "oemcomma":
+                case "oemcomma": // ','のキーコードがこれになるので。
                     soundPlayerList[25-1].Play();
                     return "ㄝ";
                 case ".":
