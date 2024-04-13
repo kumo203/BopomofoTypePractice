@@ -76,6 +76,7 @@
             textBox2.Size = new Size(775, 115);
             textBox2.TabIndex = 0;
             textBox2.TabStop = false;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // button1
             // 
