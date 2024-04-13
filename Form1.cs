@@ -11,7 +11,7 @@ namespace BopomofoTypePractice
                 "ㄊ", "ㄍ", "ㄐ", "ㄔ", "ㄗ", "ㄧ", "ㄛ", "ㄟ", "ㄣ", "ㄇ", "ㄋ", "ㄎ", 
                 "ㄑ", "ㄕ", "ㄘ", "ㄨ", "ㄜ", "ㄠ", "ㄤ", "ㄈ", "ㄌ", "ㄏ", "ㄒ", "ㄖ", 
                 "ㄙ", "ㄩ", "ㄝ", "ㄡ", "ㄥ", "ˉ" };
-    List<SoundPlayer> soundPlayerList;
+        List<SoundPlayer> soundPlayerList;
         List<TextBox> textBoxList;
 
         public Form1()
